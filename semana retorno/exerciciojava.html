@@ -7,11 +7,20 @@
 </head>
 <body>
     <script>
-        var salario,ajuste,novo;
-        salario = Number(window.prompt("Informe salario"));
-        ajuste = 0.10;
-        novo = salario / ajuste;
-        window.alert (`Salario: ${salario} Resultado com ajuste: ${novo}`);
+        var letra = window.prompt("Informe uma letra");
+        switch(letra.toUpperCase()){
+            case "A":
+            case "E":
+            case "I":
+            case "O":
+            case "U":
+                document.write ("É uma vogal");
+                break;
+            default:
+                document.write ("É uma consoante");
+                break;
+        }
+        
     </script>
 </body>
 </html>
