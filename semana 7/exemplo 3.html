@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var contador = 0;
+        var contador1 = 0;
+        var continuar = true;
+        while(continuar){
+            var nome = prompt("Digite seu nome");
+            var idade = Number(prompt("Digite sua idade"));
+            document.write(`Nome: ${nome}<br>`);
+            document.write(`Idade: ${idade}<br>`);
+             if(idade >= 18){
+                document.write("Você é maior de idade<br>");
+                contador++;
+            }
+            else {
+                document.write("Você é menor de idade<br>");
+                contador1++;
+            }
+            continuar = confirm("Deseja continuar?");
+        }
+        document.write(`<br>Você digitou ${contador} maiores de idade.<br>`)
+        document.write(`<br>Você digitou ${contador1} menores de idade.<br>`)
+
+        document.write("<br>Fim do programa.")
+    </script>
+</body>
+</html>
