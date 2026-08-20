@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Resolver problema visual, está computando "Não teve notas 10" em todas linhas*/
+        var contador = 0
+        var acumulador = 0
+        var flag = false;
+        var aluno = 2
+        var MaiorNota = -Number.MAX_VALUE, nomeMaiornota, nomeMenornota;
+        var MenorNota = Number.MAX_VALUE;
+        for(var i = 0;i < aluno; i++){
+            var nome = prompt("Digite seu nome");
+            var nota = Number(prompt(`Digite sua nota(Aluno ${i+1})`));
+            acumulador += nota;
+            document.write(`Nome: ${nome} - Nota: ${nota} <br>`);
+            if(nota == 10){
+                flag = true;
+                // contador++;
+            }
+            if(nota > MaiorNota){
+                MaiorNota = nota;
+                nomeMaiornota = nome;
+            }
+            if(nota < MenorNota){
+                MenorNota = nota;
+                nomeMenornota = nome;
+            }
+        }
+            var media = acumulador / aluno;
+            document.write(`Média da turma é ${media.toFixed(2)}<br>`)
+            document.write(`Maior nota é ${MaiorNota} de ${nomeMaiornota}<br>`);
+            document.write(`Menor nota é ${MenorNota} de ${nomeMenornota}<br>`);
+        
+            // if (flag == false){
+            // document.write("Não teve notas 10");
+            // }
+            // else{
+            //     if(contador>1){
+            //         document.write(`Teve ${contador} notas 10`);
+            //     }
+            //     else{
+            //         document.write("Teve somente 1 nota 10")
+            //     }
+        /* var contador = 0;
+        var contador1 = 0;
+        var continuar = true;
+        while(continuar){
+            var nome = prompt("Digite seu nome");
+            var idade = Number(prompt("Digite sua idade"));
+            document.write(`Nome: ${nome}<br>`);
+            document.write(`Idade: ${idade}<br>`);
+             if(idade >= 18){
+                document.write("Você é maior de idade<br>");
+                contador++;
+            }
+            else {
+                document.write("Você é menor de idade<br>");
+                contador1++;
+            }
+            continuar = confirm("Deseja continuar?");
+        }
+        document.write(`<br>Você digitou ${contador} maiores de idade.<br>`)
+        document.write(`<br>Você digitou ${contador1} menores de idade.<br>`)
+        document.write("<br>Fim do programa.") */
+    </script>
+</body>
+</html>
