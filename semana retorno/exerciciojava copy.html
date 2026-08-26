@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var flag = true;
+        // var numero = Number(window.prompt("Informe uma Informe um número"));
+        // for(var i = 2;i < numero; i++){
+        //     if (numero % i == 0){
+        //         flag = false;
+        //     }
+        // } 
+        // if(flag == true){
+        //     document.write("O número " + numero + " é primo");
+        // }
+        // else{
+        //     document.write("O número " + numero + " não é primo");
+        // }
+        do{
+            var nome = prompt("informe seu nome:");
+            do{
+                var peso = Number(prompt("Digite seu peso:"));
+                if(isNaN(peso) || (peso <= 0 || peso > 400)){
+                    alert("Peso inválido!");
+                    continue;
+                }
+                break;
+            }while(true);
+
+            var continuar = confirm("Deseja continuar?");
+        }while(continuar);
+    </script>
+</body>
+</html>
