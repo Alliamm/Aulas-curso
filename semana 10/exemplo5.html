@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A Rua dos cataventos - Soneto XVII</title>
+  </head>
+  <body>
+    <p>  
+    Da vez primeira em que me <span class="perda">assassinaram</span>,<br>
+    <span id="meuId" class="perda">Perdi</span> um jeito de sorrir que eu tinha.<br>
+    Depois, <span class="perda">a cada vez que me mataram</span>,<br>
+    <span class="perda"></span>Foram levando</span> qualquer coisa minha.
+    </p>  
+
+    <p>  
+    Hoje, dos meus cadáveres eu sou<br>
+    O mais desnudo, <span class="perda">o que não tem mais nada</span>.<br>
+    Arde um toco de Vela amarelada,<br>
+    Como <span class="perda">único</span> bem que me ficou.
+    </p>  
+
+    <p>  
+    Vinde! Corvos, chacais, ladrões de estrada!<br>
+    Pois dessa mão avaramente adunca<br>
+    <span class="resistencia">Não haverão de arrancar a luz sagrada!</span>
+    </p>  
+
+    <p>  
+    Aves da noite! Asas do horror! Voejai!<br>
+    Que a luz trêmula e triste como um ai,<br>
+    A luz de um morto <span class="resistencia">não se apaga nunca!</span>
+    </p>  
+    <script>
+      var perda = document.querySelectorAll('.perda');
+        for(var i=0; i < perda.lenght;i++){
+          perda[i].style.color="red";
+        }
+      var resistencia = document.querySelector('resistencia');
+      resistencia.style.backgroundColor="green";
+    </script>
+    
+    </style>
+  </body>
+</html>
