@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Aaa</li>
+        <li>Bbb</li>
+        <li>Ccc</li>
+        <li>Ddd</li>
+        <li>Eee</li>
+    </ul>
+    <script>
+        var texto = "Aaa,Bbb,Ccc,Ddd,Eee";
+        var vet = texto.split(",");
+        var ul = document.createElement("ul");
+        document.body.appendChild(ul);
+        for(var i = 0; i < vet.length; i++){
+            var li = document.createElement("li");
+            li.textContent = vet[i];
+            ul.appendChild(li);
+        }
+    </script>
+     <!-- <script>
+        
+        var texto = prompt("informe uma frase");
+        var cont = 0;
+        for(var i=0; i < texto.length; i++){
+           if(texto.charCodeAt(i) == 32){
+                cont++;
+           }
+        }
+        document.write(`Quantidade de espaços: ${cont}<br>`);
+     </script> -->
+</body>
+</html>
